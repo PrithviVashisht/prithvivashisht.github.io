@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dynamic Ball Tracking in 3D Space | Prithvi Vashisht</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="../index.html">Prithvi Vashisht</a>
+    <nav>
+      <a href="../index.html#projects">Projects</a>
+      <a href="../index.html#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <div class="project-head">
+    <a class="back" href="../index.html#projects">&larr; All projects</a>
+    <h1>Dynamic Ball Tracking in 3D Space</h1>
+    <div class="meta">Jan 2026 &ndash; May 2026</div>
+    <div class="facts">
+      <div><div class="label">Robot</div><div class="value">UR5e (simulated)</div></div>
+      <div><div class="label">Simulator</div><div class="value">CoppeliaSim</div></div>
+      <div><div class="label">Language</div><div class="value">MATLAB</div></div>
+      <div><div class="label">Result</div><div class="value">Tracking within 5 cm</div></div>
+    </div>
+  </div>
+
+  <section>
+    <h2>Demo</h2>
+    <figure class="media">
+      <div class="slot">Demo video goes here. Save as assets/ball-tracking/demo.mp4 and replace this box with the video tag shown in README.md.</div>
+      <figcaption>Arm tracking a user-driven ball.</figcaption>
+    </figure>
+  </section>
+
+  <section>
+    <h2>Overview</h2>
+    <div class="prose">
+      <p>
+        A real-time control system that keeps a UR5e arm's end effector on a moving ball in CoppeliaSim.
+        Validated on constant-velocity motion and on unpredictable, user-driven motion, with end-effector tracking within a 5 cm threshold.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Approach</h2>
+    <div class="prose">
+      <ul>
+        <li><strong>Inverse kinematics:</strong> damped least-squares Jacobian IK, with exponential position filtering and per-joint step capping.</li>
+        <li><strong>Null-space projection:</strong> pulls joints toward a neutral pose without disturbing end-effector accuracy.</li>
+        <li><strong>Control architecture:</strong> joint servo delegated to CoppeliaSim's internal PD controller at 200 Hz substeps. A high-level computer computes targets and a low-level controller closes the loop, mirroring real-world systems.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Details</h2>
+    <div class="prose">
+      <p>Add equations, plots of tracking error, and code links here.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="pager">
+      <span></span>
+      <a href="autoslug-hand.html">Next: Autoslug Humanoid Hand &rarr;</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site">
+  <div class="wrap">&copy; 2026 Prithvi Vashisht</div>
+</footer>
+
+</body>
+</html>

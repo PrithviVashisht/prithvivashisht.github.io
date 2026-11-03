@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Slugbotics Open-Source Modular Robotic Arm | Prithvi Vashisht</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="../index.html">Prithvi Vashisht</a>
+    <nav>
+      <a href="../index.html#projects">Projects</a>
+      <a href="../index.html#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <div class="project-head">
+    <a class="back" href="../index.html#projects">&larr; All projects</a>
+    <h1>Slugbotics Open-Source Modular Robotic Arm</h1>
+    <div class="meta">Oct 2023 &ndash; Sep 2024</div>
+    <div class="facts">
+      <div><div class="label">Role</div><div class="value">Team lead</div></div>
+      <div><div class="label">Team size</div><div class="value">30 members</div></div>
+      <div><div class="label">Domains</div><div class="value">Mechanical, Embedded C, CAD</div></div>
+      <div><div class="label">Fabrication</div><div class="value">Fully 3D-printable</div></div>
+    </div>
+  </div>
+
+  <section>
+    <h2>Demo</h2>
+    <figure class="media">
+      <div class="slot">Photo or video goes here. Save as assets/slugbotics-arm/demo.mp4 and replace this box with the video tag shown in README.md.</div>
+      <figcaption>Arm in motion.</figcaption>
+    </figure>
+  </section>
+
+  <section>
+    <h2>Overview</h2>
+    <div class="prose">
+      <p>
+        A fully 3D-printable modular robotic arm with a preset joint-and-link system, allowing the number of degrees of freedom to be extended or retracted without significant physical redesign.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Subsystems</h2>
+    <div class="prose">
+      <ul>
+        <li><strong>Control firmware (C):</strong> receives target joint angles from a host PC over UART. Independent per-joint PID loops on the onboard microcontroller drive each joint to its commanded position.</li>
+        <li><strong>Electrical harness:</strong> JST/servo wiring routed through hollow joint shafts along the axis of rotation, minimizing cable flex and wear across repeated motion cycles.</li>
+        <li><strong>Quick-release end effector mount:</strong> tool swaps without fasteners, compatible with any end effector adhering to the defined interface geometry.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Details</h2>
+    <div class="prose">
+      <p>Add CAD renders, UART message format, PID tuning notes, and repository link here.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="pager">
+      <a href="autoslug-hand.html">&larr; Previous: Autoslug Humanoid Hand</a>
+      <span></span>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site">
+  <div class="wrap">&copy; 2026 Prithvi Vashisht</div>
+</footer>
+
+</body>
+</html>
